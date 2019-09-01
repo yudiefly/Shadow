@@ -17,6 +17,7 @@ The Shadow solution is a development framework based on .net core 2.1 Web API. I
 |MongoDbRepository|MongoDb Repository layer||
 |MySqlRepository|MySql Repository Layer||
 |SqlServerRepository|SqlServer Repository Layer||
+|PostgreSqlRepository|PostgreSql Repository Layer||
 |ThirdParty.ESB|ThirdParty.ESB(集成第三方框架&应用的项目层)
 |Service|Service Layer(服务层的接口)||
 |Tool|Tool(这个不解释了)||
