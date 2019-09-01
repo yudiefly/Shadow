@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shadow.Entity\Shadow.Entity.csproj" />
+    <ProjectReference Include="..\Shadow.Infrastructure\Shadow.Infrastructure.csproj" />
+    <ProjectReference Include="..\Shadow.Tool\Shadow.Tool.csproj" />
+  </ItemGroup>
+
+</Project>

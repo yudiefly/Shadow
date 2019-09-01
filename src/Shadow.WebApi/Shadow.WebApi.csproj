@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="3.0.0" />
+    <PackageReference Include="ZZH.Metrics.ServiceCollection.Extensions" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shadow.ContractModel\Shadow.ContractModel.csproj" />
+    <ProjectReference Include="..\Shadow.Entity\Shadow.Entity.csproj" />
+    <ProjectReference Include="..\Shadow.Infrastructure\Shadow.Infrastructure.csproj" />
+    <ProjectReference Include="..\Shadow.IRepository\Shadow.IRepository.csproj" />
+    <ProjectReference Include="..\Shadow.IService\Shadow.IService.csproj" />
+    <ProjectReference Include="..\Shadow.MongoDbRepository\Shadow.MongoDbRepository.csproj" />
+    <ProjectReference Include="..\Shadow.MySqlRepository\Shadow.MySqlRepository.csproj" />
+    <ProjectReference Include="..\Shadow.Service\Shadow.Service.csproj" />
+    <ProjectReference Include="..\Shadow.SqlServerRepository\Shadow.SqlServerRepository.csproj" />
+    <ProjectReference Include="..\Shadow.ThirdParty.ESB\Shadow.ThirdParty.ESB.csproj" />
+    <ProjectReference Include="..\Shadow.Tool\Shadow.Tool.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="nlog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

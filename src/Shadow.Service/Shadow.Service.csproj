@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shadow.ContractModel\Shadow.ContractModel.csproj" />
+    <ProjectReference Include="..\Shadow.Entity\Shadow.Entity.csproj" />
+    <ProjectReference Include="..\Shadow.Infrastructure\Shadow.Infrastructure.csproj" />
+    <ProjectReference Include="..\Shadow.IRepository\Shadow.IRepository.csproj" />
+    <ProjectReference Include="..\Shadow.IService\Shadow.IService.csproj" />
+  </ItemGroup>
+
+</Project>
