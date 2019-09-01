@@ -10,6 +10,7 @@ using ZZH.Metrics.ServiceCollection.Extensions;
 //using Pivotal.Discovery.Client;
 using Shadow.MongoDbRepository.DependencyInjection;
 using Shadow.MySqlRepository.DependencyInjection;
+using Shadow.PostgreSqlRepository.DependencyInjection;
 using Shadow.Service.DependencyInjection;
 using Shadow.SqlServerRepository.DependencyInjection;
 using Shadow.Tool.ApplicationBuilder;
@@ -76,7 +77,7 @@ namespace Shadow.WebApi
             services.AddRedisSentinelCache(Configuration);  // 哨兵模式
 
             // only for test
-            // 实际开发中只能使用 SqlServer 或 MySQL 其中一个
+            // 实际开发中只能使用 SqlServer 或 MySQL、PostgreSQL其中一个
             if (string.Equals(Configuration["dbmodel"], "MySql", System.StringComparison.OrdinalIgnoreCase))
             {
                 // add dapper MySql
@@ -85,9 +86,18 @@ namespace Shadow.WebApi
             }
             else
             {
-                // add dapper SqlServer
-                services.AddDapperSqlServer<SqlServerRepository.Context.ShadowActiveDbContext>("shadow");
-                services.AddSqlServerRepository();
+                if(string.Equals(Configuration["dbmodel"], "PostgreSQL", System.StringComparison.OrdinalIgnoreCase))
+                {
+                    //add dapper PostgreSQL
+                    services.AddDapperPostgreSql<PostgreSqlRepository.Context.ShadowActiveDbContext>("shadow_postgresql");
+                    services.AddPostgreSqlRepository();
+                }
+                else
+                {
+                    // add dapper SqlServer
+                    services.AddDapperSqlServer<SqlServerRepository.Context.ShadowActiveDbContext>("shadow");
+                    services.AddSqlServerRepository();
+                }               
             }
 
             // add MongoDB

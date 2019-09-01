@@ -22,6 +22,7 @@
     <ProjectReference Include="..\Shadow.IService\Shadow.IService.csproj" />
     <ProjectReference Include="..\Shadow.MongoDbRepository\Shadow.MongoDbRepository.csproj" />
     <ProjectReference Include="..\Shadow.MySqlRepository\Shadow.MySqlRepository.csproj" />
+    <ProjectReference Include="..\Shadow.PostgreSqlRepository\Shadow.PostgreSqlRepository.csproj" />
     <ProjectReference Include="..\Shadow.Service\Shadow.Service.csproj" />
     <ProjectReference Include="..\Shadow.SqlServerRepository\Shadow.SqlServerRepository.csproj" />
     <ProjectReference Include="..\Shadow.ThirdParty.ESB\Shadow.ThirdParty.ESB.csproj" />

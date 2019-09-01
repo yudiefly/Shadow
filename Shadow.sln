@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shadow.Tests.Tool", "test\S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shadow.MongoDbRepository", "src\Shadow.MongoDbRepository\Shadow.MongoDbRepository.csproj", "{9F13C21D-F9E3-4546-B609-CFA2A7A423A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shadow.WebApi", "src\Shadow.WebApi\Shadow.WebApi.csproj", "{4F5D3468-B351-43AA-A88F-BBAF2F553F2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shadow.WebApi", "src\Shadow.WebApi\Shadow.WebApi.csproj", "{4F5D3468-B351-43AA-A88F-BBAF2F553F2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shadow.PostgreSqlRepository", "src\Shadow.PostgreSqlRepository\Shadow.PostgreSqlRepository.csproj", "{7740AF1A-F092-405D-B1D4-A8B595BD644B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{4F5D3468-B351-43AA-A88F-BBAF2F553F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F5D3468-B351-43AA-A88F-BBAF2F553F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F5D3468-B351-43AA-A88F-BBAF2F553F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7740AF1A-F092-405D-B1D4-A8B595BD644B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7740AF1A-F092-405D-B1D4-A8B595BD644B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7740AF1A-F092-405D-B1D4-A8B595BD644B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7740AF1A-F092-405D-B1D4-A8B595BD644B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -144,6 +150,7 @@ Global
 		{16014137-F87F-4443-9564-BE8F2018AA07} = {53613748-631C-4135-BCDE-2E4E418BB23C}
 		{9F13C21D-F9E3-4546-B609-CFA2A7A423A2} = {C8403AB7-E9EE-492D-B3F0-1A3442DDF9D7}
 		{4F5D3468-B351-43AA-A88F-BBAF2F553F2C} = {6DF4CBB1-839A-4F63-A82B-AA86BD9C69FA}
+		{7740AF1A-F092-405D-B1D4-A8B595BD644B} = {C8403AB7-E9EE-492D-B3F0-1A3442DDF9D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E32722B2-7C51-45D5-94E1-C730EA6DC1A5}

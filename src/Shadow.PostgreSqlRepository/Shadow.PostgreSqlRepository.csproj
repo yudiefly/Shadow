@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="4.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shadow.Entity\Shadow.Entity.csproj" />
+    <ProjectReference Include="..\Shadow.Infrastructure\Shadow.Infrastructure.csproj" />
+    <ProjectReference Include="..\Shadow.IRepository\Shadow.IRepository.csproj" />
+    <ProjectReference Include="..\Shadow.Tool\Shadow.Tool.csproj" />
+  </ItemGroup>
+
+</Project>
