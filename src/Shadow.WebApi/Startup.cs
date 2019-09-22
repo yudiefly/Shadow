@@ -24,6 +24,7 @@ using System.Diagnostics;
 using ZZH.DapperExpression.Service.DependencyInjection;
 using ZZH.MongoDB.StandardService.DependencyInjection;
 using ZZH.AutoMapper.Service.DependencyInjection;
+using ZZH.ZipKinClient.Service.DependencyInjection;
 using NLog.Web;
 
 namespace Shadow.WebApi
@@ -128,7 +129,8 @@ namespace Shadow.WebApi
                 options.HasRequestHeaders = true;
                 options.HasResponseHeaders = true;
             });
-
+            //添加调用链监控（APM)            
+            app.AddZipKin(loggerFactory, Configuration["ZipKin:ApplicationId"], Configuration["ZipKin:ZipKinServer"]);
             // 保证在 Mvc 之前调用
             app.UseHttpContextGlobal()
                .UseToolTrace();
