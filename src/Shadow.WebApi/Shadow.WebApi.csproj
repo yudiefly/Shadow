@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.4" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="3.0.0" />
     <PackageReference Include="ZZH.Metrics.ServiceCollection.Extensions" Version="1.0.0" />
     <PackageReference Include="ZZH.ZipKinClient.Service" Version="1.0.1" />
