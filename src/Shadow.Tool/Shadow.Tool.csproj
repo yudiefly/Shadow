@@ -10,7 +10,7 @@
     <PackageReference Include="DapperExtensions.DotnetCore" Version="1.0.1" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="8.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.1" />
-    <PackageReference Include="MongoDB.Driver" Version="2.7.3" />
+    <PackageReference Include="MongoDB.Driver" Version="2.19.0" />
     <PackageReference Include="ZZH.AutoMapper.Service" Version="1.0.1" />
     <PackageReference Include="ZZH.DapperExpression.Service" Version="1.0.3" />
     <PackageReference Include="ZZH.MongoDB.StandardService" Version="1.0.1" />
